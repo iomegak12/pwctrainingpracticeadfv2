@@ -1,0 +1,21 @@
+{
+	"name": "SQLDatawarehouseTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLDatawarehouseForAdventureworksLT",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tableName": {
+				"type": "String"
+			}
+		},
+		"type": "AzureSqlDWTable",
+		"typeProperties": {
+			"tableName": {
+				"value": "@dataset().tableName",
+				"type": "Expression"
+			}
+		}
+	}
+}
