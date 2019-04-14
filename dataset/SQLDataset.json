@@ -1,0 +1,13 @@
+{
+	"name": "SQLDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLDatabaseForAWLT",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureSqlTable",
+		"typeProperties": {
+			"tableName": "DummyTable"
+		}
+	}
+}
